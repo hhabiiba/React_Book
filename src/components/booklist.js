@@ -4,9 +4,9 @@ export default function BookList(props) {
   return (
     <div>
        <ol>
-        <li>{props.list[0]}</li>
-        <li>{props.list[1]}</li>
-        <li>{props.list[2]}</li>
+       {props.list.map((book, i)=> (
+            <li key={i}>{book}</li>
+        ))}
         </ol> 
         
             
