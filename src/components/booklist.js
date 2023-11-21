@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function BookList() {
+export default function BookList(props) {
   return (
     <div>
        <ol>
-        <li>book 1</li>
-        <li>book 2</li>
-        <li>book 3</li>
+        <li>{props.list[0]}</li>
+        <li>{props.list[1]}</li>
+        <li>{props.list[2]}</li>
         </ol> 
         
             
